@@ -8,7 +8,7 @@ pipeline {
                     url: 'https://github.com/JavaBrewer/testjos2.git'
             }
         }
-        stage("Build & SonarQube") {
+        stage("Build & SonarQube Analysis") {
             agent any
             steps {
                 withSonarQubeEnv('SonarQube_server') {
